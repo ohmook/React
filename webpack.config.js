@@ -36,7 +36,7 @@ module.exports = {
                 loader: 'url-loader',
                 options: {
                     name: '[hash].[ext]',
-                    limit: 10000
+                    limit: 1
                 }
             }
         ]
@@ -66,5 +66,6 @@ module.exports = {
     resolve: {
         modules: ['node_modules'],
         extensions: ['.js', '.json', '.jsx', '.css']
-    }
+    },
+    devtool: 'source-map'
 };
