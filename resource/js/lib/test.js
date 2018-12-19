@@ -16,3 +16,17 @@ export var testa = "오";
 export function testb(val){
     testa = val;
 }
+
+
+function plus(a, b){
+    return a+b;
+}
+
+
+function defaults(){
+    return "Result=>"+testa
+}
+
+export {plus as plus2}
+
+export {defaults as default}
